@@ -842,3 +842,6 @@ def robot_loop(get_input_fn, speak_fn, tick_rate=1.0):
 
     while True:
         user_text = get
+        with open("outbox.txt", "w") as f:
+        f.write("Hello from the cloud!")
+
