@@ -829,9 +829,12 @@ def creature_reply(user_input):
 
     return final_output
 
-# ============================================================
+# =====================================================>
 # ROBOT MAIN LOOP (OPTIONAL)
-# ============================================================
+# =====================================================>
+
+import time
+
 
 def robot_loop(get_input_fn, speak_fn, tick_rate=1.0):
     """
@@ -841,10 +844,21 @@ def robot_loop(get_input_fn, speak_fn, tick_rate=1.0):
     """
 
     while True:
-        with open("inbox.txt", "r") as f:
-            user_text = f.read().strip()
+        user_text = get_input_fn()
 
-        with open("outbox.txt", "w") as f:
-            f.write("Hello from the cloud!")
+        # creature logic here
 
+        speak_fn("Hello from the cloud!")
 
+        time.sleep(tick_rate)
+
+def get_input_fn():
+
+    with open("inbox.txt", "r") as f:
+        return f.read().strip()
+
+def speak_fn(text):
+    with open("outbox.txt", "w") as f:
+        f.write(text)
+
+robot_loop(get_input_fn, speak_fn)
