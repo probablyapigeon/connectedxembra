@@ -835,30 +835,20 @@ def creature_reply(user_input):
 
 import time
 
-
-def robot_loop(get_input_fn, speak_fn, tick_rate=1.0):
-    """
-    get_input_fn: function that returns microphone text
-    speak_fn: function that sends text to robot speaker
-    tick_rate: seconds between loops
-    """
-
-    while True:
-        user_text = get_input_fn()
-
-        # creature logic here
-
-        speak_fn("Hello from the cloud!")
-
-        time.sleep(tick_rate)
+def robot_loop(get_input_fn, speak_fn):
+    user_text = get_input_fn()
+    speak_fn("Hello from the cloud!")
 
 def get_input_fn():
-
-    with open("inbox.txt", "r") as f:
-        return f.read().strip()
+    try:
+        with open("inbox.txt", "r") as f:
+            return f.read().strip()
+    except FileNotFoundError:
+        return ""
 
 def speak_fn(text):
     with open("outbox.txt", "w") as f:
         f.write(text)
 
 robot_loop(get_input_fn, speak_fn)
+
