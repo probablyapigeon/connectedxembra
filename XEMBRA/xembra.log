@@ -1,0 +1,72 @@
+[2026-07-10 01:09:11] Evolution points updated: 2.0
+[2026-07-10 01:09:11] Curiosity: 51, Sleep state: awake, Energy: 100
+[2026-07-10 01:28:35] Evolution points updated: 2.0
+[2026-07-10 01:28:35] Curiosity: 51, Sleep state: awake, Energy: 100
+[2026-07-10 01:28:35] Evolution effects applied at level 0: personality={'kindness': 0.7, 'curiosity': 0.9, 'silliness': 0.6, 'calmness': 0.5}, curiosity=51, energy=100
+[2026-07-10 03:21:52] Mood updated: bright | time_state=deepnight, energy=100, curiosity=50, sleep_state=awake
+[2026-07-10 03:21:52] Evolution points updated: 2.0
+[2026-07-10 03:21:52] Curiosity: 51, Sleep state: awake, Energy: 100
+[2026-07-10 03:21:52] Evolution effects applied at level 0: personality={'kindness': 0.7, 'curiosity': 0.9, 'silliness': 0.6, 'calmness': 0.5}, curiosity=51, energy=100
+[2026-07-10 03:25:26] Mood updated: bright | time_state=deepnight, energy=98, curiosity=51, sleep_state=awake
+[2026-07-10 03:25:26] Evolution points updated: 4.0
+[2026-07-10 03:25:26] Curiosity: 52, Sleep state: awake, Energy: 98
+[2026-07-10 03:25:26] Evolution effects applied at level 0: personality={'kindness': 0.73, 'curiosity': 0.9, 'silliness': 0.6, 'calmness': 0.525}, curiosity=52, energy=98
+[2026-07-10 03:26:54] Mood updated: bright | time_state=deepnight, energy=96, curiosity=52, sleep_state=awake
+[2026-07-10 03:26:54] Evolution points updated: 6.0
+[2026-07-10 03:26:54] Curiosity: 53, Sleep state: awake, Energy: 96
+[2026-07-10 03:26:54] Evolution effects applied at level 0: personality={'kindness': 0.76, 'curiosity': 0.9, 'silliness': 0.6, 'calmness': 0.55}, curiosity=53, energy=96
+[2026-07-10 03:27:10] Mood updated: bright | time_state=deepnight, energy=94, curiosity=53, sleep_state=awake
+[2026-07-10 03:27:10] Evolution points updated: 8.0
+[2026-07-10 03:27:10] Curiosity: 54, Sleep state: awake, Energy: 94
+[2026-07-10 03:27:10] Evolution effects applied at level 0: personality={'kindness': 0.79, 'curiosity': 0.9, 'silliness': 0.62, 'calmness': 0.5750000000000001}, curiosity=54, energy=94
+[2026-07-10 03:39:31] Mood updated: bright | time_state=deepnight, energy=100, curiosity=50, sleep_state=awake
+[2026-07-10 03:39:31] Workspace selected: analysis | mood=bright, curiosity=51, energy=100, strongest_topic=music, interest_value=0
+[2026-07-10 03:39:31] Topic interest updated: topic=general, interest=5, reason=interaction, curiosity=53
+[2026-07-10 03:39:31] Memory decay: decayed=[], forgotten=[], decay_rate=0.02
+[2026-07-10 03:39:31] Drift applied: personality={'kindness': 0.7024999999999999, 'curiosity': 0.9, 'silliness': 0.602, 'calmness': 0.5015}, drift_amount=0.005, reason=deepnight, time_state=deepnight, mood=bright, curiosity=53, energy=100
+[2026-07-10 03:39:31] Evolution points updated: 2.0
+[2026-07-10 03:39:31] Curiosity: 53, Sleep state: awake, Energy: 100
+[2026-07-10 03:39:31] Evolution effects applied at level 0: personality={'kindness': 0.7024999999999999, 'curiosity': 0.9, 'silliness': 0.602, 'calmness': 0.5015}, curiosity=53, energy=100
+[2026-07-10 03:39:31] Semantic override triggered: rule=None, input='override_check', output='override_check', mood=bright, sleep_state=awake, personality={'kindness': 0.7324999999999999, 'curiosity': 0.9, 'silliness': 0.602, 'calmness': 0.5265}, emotional_memory={'positive': 0, 'negative': 0, 'affection': 0, 'chaos': 0, 'comfort': 0}, identity={'self_worth': 0.5, 'self_coherence': 0.5, 'bond_imprint': 0.5, 'memory_depth': 0.0, 'identity_age': 0.001}
+[2026-07-12 20:50:02] Workspace selected: reflection
+[2026-07-12 20:50:02] Mood updated: bright
+[2026-07-12 20:50:02] Evolution points updated: 2.0
+[2026-07-12 20:50:02] Evolution effects applied at level 0
+[2026-07-12 20:50:02] Memory decay: decayed=[], forgotten=[]
+[2026-07-12 20:50:02] Drift applied: {'kindness': 0.7, 'curiosity': 0.9, 'silliness': 0.6, 'calmness': 0.5}
+[2026-07-12 21:23:46] Workspace selected: reflection
+[2026-07-12 21:23:46] Mood updated: bright
+[2026-07-12 21:23:46] Evolution points updated: 2.0
+[2026-07-12 21:23:46] Evolution effects applied at level 0
+[2026-07-12 21:23:46] Memory decay: decayed=[], forgotten=[]
+[2026-07-12 21:23:46] Drift applied: {'kindness': 0.7, 'curiosity': 0.9, 'silliness': 0.6, 'calmness': 0.5}
+[2026-07-12 21:40:00] Workspace selected: reflection
+[2026-07-12 21:40:00] Mood updated: bright
+[2026-07-12 21:40:00] Evolution points updated: 2.0
+[2026-07-12 21:40:00] Evolution effects applied at level 0
+[2026-07-12 21:40:00] Memory decay: decayed=[], forgotten=[]
+[2026-07-12 21:40:00] Drift applied: {'kindness': 0.7, 'curiosity': 0.9, 'silliness': 0.6, 'calmness': 0.5}
+[2026-07-12 22:33:27] Workspace selected: analysis
+[2026-07-12 22:33:27] Mood updated: bright
+[2026-07-12 22:33:27] Evolution points updated: 4.0
+[2026-07-12 22:33:27] Evolution effects applied at level 0
+[2026-07-12 22:33:27] Memory decay: decayed=[], forgotten=[]
+[2026-07-12 22:33:27] Drift applied: {'kindness': 0.7014999999999999, 'curiosity': 0.9, 'silliness': 0.6012, 'calmness': 0.5009}
+[2026-07-12 22:33:44] Workspace selected: analysis
+[2026-07-12 22:33:44] Mood updated: bright
+[2026-07-12 22:33:44] Evolution points updated: 6.0
+[2026-07-12 22:33:44] Evolution effects applied at level 0
+[2026-07-12 22:33:44] Memory decay: decayed=[], forgotten=[]
+[2026-07-12 22:33:44] Drift applied: {'kindness': 0.7029999999999998, 'curiosity': 0.9, 'silliness': 0.6023999999999999, 'calmness': 0.5018}
+[2026-07-12 22:34:27] Workspace selected: analysis
+[2026-07-12 22:34:27] Mood updated: bright
+[2026-07-12 22:34:27] Evolution points updated: 8.0
+[2026-07-12 22:34:27] Evolution effects applied at level 0
+[2026-07-12 22:34:27] Memory decay: decayed=[], forgotten=[]
+[2026-07-12 22:34:27] Drift applied: {'kindness': 0.7044999999999998, 'curiosity': 0.9, 'silliness': 0.6035999999999999, 'calmness': 0.5027}
+[2026-07-12 22:37:25] Workspace selected: analysis
+[2026-07-12 22:37:25] Mood updated: bright
+[2026-07-12 22:37:25] Evolution points updated: 9.0
+[2026-07-12 22:37:25] Evolution effects applied at level 0
+[2026-07-12 22:37:25] Memory decay: decayed=[], forgotten=[]
+[2026-07-12 22:37:25] Drift applied: {'kindness': 0.7059999999999997, 'curiosity': 0.9, 'silliness': 0.6047999999999999, 'calmness': 0.5036}
