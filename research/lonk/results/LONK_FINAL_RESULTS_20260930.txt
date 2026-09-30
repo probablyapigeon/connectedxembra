@@ -1,0 +1,346 @@
+LONK EXPERIMENTAL BRANCH — FINAL RESULTS
+========================================
+Date: 2026-09-30
+
+FROZEN ARCHIVE
+--------------
+lonk-final-20260930-133418.tar.gz
+
+SHA-256:
+53c4d2f5331e254bb281bcd940c35de3bfc5205d5f3e8796e083e9c699cc9069
+
+Archive integrity: PASS
+Archive readback:  PASS
+
+
+1. ORIGINAL AGENTIC RECURRENCE — INSTABILITY
+--------------------------------------------
+Original Courage, Wisdom, and Power parameterizations
+were linearly unstable.
+
+Spectral radii:
+
+Courage:
+rho = 1.333480852
+
+Wisdom:
+rho = 1.226370427
+
+Power:
+rho = 1.069107227
+
+All exceeded 1.
+
+Observed deterministic threshold crossings:
+
+Courage: 104
+Wisdom:  141
+Power:   412
+
+Closed-form eigenmode reconstruction recovered all
+three crossing indices exactly.
+
+
+2. STABLE PARAMETER SEARCH
+--------------------------
+Nearby parameter combinations with rho < 1 were found
+for all three personalities.
+
+This demonstrated that instability was parameter-dependent,
+not an unavoidable property of the architecture.
+
+
+3. HOMEOSTASIS / COUNTERFACTUAL PULSE RESPONSE
+----------------------------------------------
+A standardized perturbation was applied to one simulated
+trajectory while an otherwise identical counterfactual twin
+received identical future stochastic inputs without the pulse.
+
+FULL condition:
+
+initial effect:
+0.750033352
+
+50% recovery:
+14 ticks
+
+90% recovery:
+~45 ticks
+
+final residual:
+0.000000156
+
+recovery fraction:
+0.999999792
+
+50% recovery:
+1000/1000
+
+90% recovery:
+1000/1000
+
+Removing relaxation eliminated this strong recovery.
+
+Removing clipping also eliminated trajectory restoration in
+this assay.
+
+Interpretation:
+The FULL toy dynamics exhibit operational computational
+restoration under the tested perturbation.
+
+This does not establish biological homeostasis.
+
+
+4. METABOLISM v0.1
+------------------
+Initial metabolic parameters were nonviable over the intended
+2000-tick horizon.
+
+Mean lifespan:
+
+REGULATED:
+104.597
+
+CONSTANT:
+78.088
+
+NO_REPAIR:
+80.504
+
+The experiment identified a resource-allocation tradeoff but
+also showed that the original energy budget was too harsh for
+the intended famine experiment.
+
+
+5. METABOLIC VIABILITY FRONTIER
+-------------------------------
+A resource-gain / maintenance sweep identified a finite-horizon
+persistence boundary.
+
+At maintenance = 0.010, fine sweep results included:
+
+gain     survival
+0.0500   0.179
+0.0505   0.297
+0.0510   0.461
+0.0515   0.641
+0.0520   0.756
+0.0525   0.858
+0.0530   0.931
+0.0535   0.959
+0.0540   0.978
+0.0550   0.995
+0.0565   1.000
+
+Steepest observed interval:
+
+0.0510 -> 0.0515
+survival 0.461 -> 0.641
+
+These are finite-horizon simulation results, not evidence
+of a biological phase transition.
+
+
+6. COARSE MARKOV REPRESENTATION
+-------------------------------
+States were preregistered as:
+
+H:
+energy >= 0.55 and damage < 0.35
+
+S:
+energy >= 0.25 and damage < 0.70, excluding H
+
+C:
+alive, otherwise
+
+D:
+dead
+
+At gains 0.0500 / 0.0510 / 0.0530:
+
+survival:
+0.183 / 0.458 / 0.923
+
+C -> H/S escape:
+0.016421 / 0.023972 / 0.052359
+
+C -> D:
+0.001695 / 0.000963 / 0.000156
+
+Thus increased persistence was associated with substantially
+greater critical-state escape and lower critical-state death.
+
+
+7. FIRST-ORDER MARKOV SUFFICIENCY TEST
+--------------------------------------
+Held-out prediction:
+
+First-order coarse log loss:
+0.126172087
+
+Second-order coarse log loss:
+0.111412235
+
+Improvement:
++0.014759852
+
+95% CI:
+[+0.014124665, +0.015395038]
+
+Second-order wins:
+988/1000 held-out trajectories
+
+Conclusion:
+The four-state H/S/C/D representation failed the
+first-order sufficiency test.
+
+This did NOT establish intrinsic memory.
+
+
+8. STATE-ALIASING TEST
+----------------------
+A 10x10 energy/damage representation initially performed
+worse than coarse history.
+
+However, increasing present-state resolution changed the
+result.
+
+20x20 present-state log loss:
+0.114187233
+
+Trend representation:
+0.113799065
+
+Coarse history:
+0.140521888
+
+Thus richer present-state information outperformed coarse
+history.
+
+
+9. CAUSAL PRESENT-STATE TEST
+----------------------------
+Present metabolic state plus current environmental input:
+
+energy
+damage
+resource
+shock
+
+produced held-out log loss:
+
+0.081855025
+
+versus coarse history:
+
+0.140521888
+
+CAUSAL beat HISTORY:
+1000/1000 held-out trajectories.
+
+Conclusion:
+Partial observability / state aliasing explained the apparent
+need for coarse historical information.
+
+
+10. EXACT STATE-SUFFICIENCY AUTOPSY
+-----------------------------------
+Exact reconstruction variables:
+
+present energy
+present damage
+current resource input
+current shock input
+
+Transitions tested:
+1,577,257
+
+Tolerance:
+1e-12
+
+Maximum energy error:
+1.110223024625156540e-16
+
+Maximum damage error:
+2.220446049250313081e-16
+
+Mismatches:
+0
+
+RESULT:
+EXACT RECONSTRUCTION PASS
+
+For this toy metabolic subsystem:
+
+x_(t+1) = F(x_t, u_t)
+
+with:
+
+x_t = (energy, damage)
+
+u_t = (resource, shock)
+
+No additional historical variable was required.
+
+
+11. OPERATION-ORDER CONTROL
+---------------------------
+An initially incorrect independent reconstruction reversed
+the order of:
+
+maintenance
+and
+policy selection.
+
+That incorrect ordering produced:
+
+50,502 mismatches.
+
+Restoring the simulator's actual operation order produced:
+
+0 mismatches across 1,577,257 transitions.
+
+This provides a concrete computational example of
+order-sensitive composition around threshold operations.
+
+
+CORE METHODOLOGICAL RESULT
+==========================
+
+Predictive dependence on history is NOT sufficient evidence
+of intrinsic path dependence.
+
+A lossy representation of the present can make historical
+information predictive because history acts as a proxy for
+omitted present-state information.
+
+A stronger path-dependence test therefore requires matching
+systems on a causally sufficient present-state representation
+before testing whether differing histories produce differing
+future evolution under identical future inputs.
+
+
+SUPPORTED HERE
+==============
+- Original tested recurrence instability
+- Eigenvalue explanation of that instability
+- Exact closed-form threshold reconstruction
+- Computational perturbation recovery in FULL dynamics
+- Metabolic resource/repair tradeoffs
+- Finite-horizon viability frontier
+- Regime-dependent coarse transition flows
+- Predictive advantage of coarse history
+- State aliasing / partial observability explanation
+- Exact causal-state reconstruction for the metabolic subsystem
+- Operation-order sensitivity in the reconstruction control
+
+
+NOT ESTABLISHED
+===============
+- Biological life
+- Consciousness
+- Intrinsic historical memory in the metabolic subsystem
+- General XEMBRA path dependence
+- Physical or biological applicability
+- A universal theory of agency
