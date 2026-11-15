@@ -58,7 +58,7 @@ XEMBRA requires only Python 3.10+ and NumPy, running natively on mobile environm
 
 ```bash
 # Clone the repository
-git clone https://github.com
+git clone https://github.com/probablyapigeon/connectedxembra.git
 cd connectedxembra
 
 # Launch the interactive glass-box runtime
