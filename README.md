@@ -105,5 +105,5 @@ If you reference this architecture or codebase in research on interpretable agen
   year         = {2026},
   publisher    = {GitHub},
   journal      = {GitHub repository},
-  howpublished \(= {\url{https://github.com/probablyapigeon/connectedxembra}} \)}
+  howpublished = {\url{https://github.com/probablyapigeon/connectedxembra}} }
 ```
